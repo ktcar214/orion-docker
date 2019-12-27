@@ -14,7 +14,7 @@ services:
     build:
       context: orion-server
       args:
-        sha: fedb85c8b2980bfc4dea7bf93ca17e059f63b1c1
+        sha: 3cbbdbe24706226cf7d218cc5f6ce81a399e7abe
         database_host: db
         database_port: 3306
         database_name: orion
