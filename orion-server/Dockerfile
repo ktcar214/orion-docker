@@ -8,7 +8,7 @@ ARG database_name
 ARG database_user
 ARG database_password
 
-RUN apt-get update && apt-get install -y wget unzip python-dev default-libmysqlclient-dev gcc build-essential
+RUN apt-get update && apt-get install -y wget unzip python-dev default-libmysqlclient-dev gcc build-essential libffi-dev libssl-dev
 
 RUN wget -O orion-server.zip https://github.com/LINKIWI/orion-server/archive/$sha.zip
 RUN unzip orion-server.zip
